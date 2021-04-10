@@ -1,0 +1,70 @@
+{
+"skeleton": {
+	"hash": "oODLaV+dGUtJ6AVu2W4EuQdwnzY",
+	"spine": "3.8.99",
+	"y": -5.07,
+	"width": 1024,
+	"height": 581.77,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/battleground", "bone": "root", "attachment": "game/battleground" },
+	{ "name": "game/player-player", "bone": "root", "attachment": "game/player-player" },
+	{ "name": "game/player-player2", "bone": "root", "attachment": "game/player-enemy" },
+	{ "name": "game/player-frame", "bone": "root", "attachment": "game/player-frame" },
+	{ "name": "game/player-frame2", "bone": "root", "attachment": "game/player-frame" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/battleground": {
+				"game/battleground": { "x": 512, "y": 288, "width": 1024, "height": 576 }
+			},
+			"game/player-frame": {
+				"game/player-frame": { "x": 513.02, "y": 64, "scaleX": 0.5856, "scaleY": 0.5856, "width": 198, "height": 235 }
+			},
+			"game/player-frame2": {
+				"game/player-frame": { "x": 513.02, "y": 507.89, "scaleX": 0.5856, "scaleY": 0.5856, "width": 198, "height": 235 }
+			},
+			"game/player-player": {
+				"game/player-player": { "x": 512.88, "y": 58.7, "scaleX": 0.6283, "scaleY": 0.6283, "width": 168, "height": 203 }
+			},
+			"game/player-player2": {
+				"game/player-enemy": { "x": 512.88, "y": 502.6, "scaleX": 0.6283, "scaleY": 0.6283, "width": 168, "height": 205 }
+			}
+		}
+	}
+],
+"animations": {
+	"battle": {},
+	"empty": {
+		"slots": {
+			"game/player-frame": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"game/player-frame2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"game/player-player": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"game/player-player2": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	}
+}
+}

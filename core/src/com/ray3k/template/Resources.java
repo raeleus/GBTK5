@@ -22,6 +22,11 @@ public class Resources {
 
     public static void loadResources(AssetManager assetManager) {
         skin_skin = assetManager.get("skin/skin.json");
+        BattlegroundSpine.skeletonData = assetManager.get("spine/battleground.json");
+        BattlegroundSpine.animationData = assetManager.get("spine/battleground.json-animation");
+        BattlegroundSpine.battleAnimation = BattlegroundSpine.skeletonData.findAnimation("battle");
+        BattlegroundSpine.emptyAnimation = BattlegroundSpine.skeletonData.findAnimation("empty");
+        BattlegroundSpine.defaultSkin = BattlegroundSpine.skeletonData.findSkin("default");
         CardSpine.skeletonData = assetManager.get("spine/card.json");
         CardSpine.animationData = assetManager.get("spine/card.json-animation");
         CardSpine.attackAnimation = CardSpine.skeletonData.findAnimation("attack");
@@ -75,6 +80,18 @@ public class Resources {
         sfx_wind = assetManager.get("sfx/wind.mp3");
         bgm_game = assetManager.get("bgm/game.mp3");
         bgm_title = assetManager.get("bgm/title.mp3");
+    }
+
+    public static class BattlegroundSpine {
+        public static SkeletonData skeletonData;
+
+        public static AnimationStateData animationData;
+
+        public static Animation battleAnimation;
+
+        public static Animation emptyAnimation;
+
+        public static com.esotericsoftware.spine.Skin defaultSkin;
     }
 
     public static class CardSpine {

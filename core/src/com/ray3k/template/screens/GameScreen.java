@@ -5,7 +5,6 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -26,7 +25,6 @@ public class GameScreen extends JamScreen {
     public Stage stage;
     public ShapeDrawer shapeDrawer;
     public boolean paused;
-    private ChainVfxEffect vfxEffect;
     private Label fpsLabel;
     
     @Override
@@ -34,8 +32,6 @@ public class GameScreen extends JamScreen {
         super.show();
     
         gameScreen = this;
-        vfxEffect = new GlitchEffect();
-        vfxManager.addEffect(vfxEffect);
         BG_COLOR.set(Color.PINK);
     
         paused = false;
@@ -59,17 +55,12 @@ public class GameScreen extends JamScreen {
     
         camera = new OrthographicCamera();
         viewport = new FitViewport(1024, 576, camera);
+        camera.position.set(512,288,0);
     
         entityController.clear();
-        BallTestEntity ballTestEntity = new BallTestEntity();
-        ballTestEntity.moveCamera = true;
-        entityController.add(ballTestEntity);
     
-        for (int i = 0; i < 10; i++) {
-            ballTestEntity = new BallTestEntity();
-            ballTestEntity.setPosition(MathUtils.random(viewport.getWorldWidth()), MathUtils.random(viewport.getWorldHeight()));
-            entityController.add(ballTestEntity);
-        }
+        var battleGround = new BattleGround();
+        entityController.add(battleGround);
     }
     
     @Override
@@ -87,7 +78,7 @@ public class GameScreen extends JamScreen {
             System.out.println("up");
         }
         
-        fpsLabel.setText(Gdx.graphics.getFramesPerSecond());
+        fpsLabel.setText(Gdx.graphics.getFramesPerSecond() + "\n" + mouseX + ", " + mouseY);
     }
     
     @Override
@@ -128,14 +119,12 @@ public class GameScreen extends JamScreen {
     
     @Override
     public void dispose() {
-        vfxEffect.dispose();
     }
     
     @Override
     public void hide() {
         super.hide();
         vfxManager.removeAllEffects();
-        vfxEffect.dispose();
         entityController.dispose();
     }
 }
