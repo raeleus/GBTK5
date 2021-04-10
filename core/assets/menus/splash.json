@@ -11,7 +11,7 @@
 						"clazz": "com.badlogic.gdx.scenes.scene2d.ui.Label",
 						"name": "default"
 					},
-					"text": "CLICK HERE TO PLAY",
+					"text": "You know what to do...",
 					"textAlignment": 8,
 					"ellipsis": false,
 					"ellipsisString": "...",
@@ -46,6 +46,50 @@
 				"uniformX": false,
 				"uniformY": false,
 				"colSpan": 1
+			},
+			{
+				"child": {
+					"class": "Label",
+					"name": "doofus",
+					"style": {
+						"clazz": "com.badlogic.gdx.scenes.scene2d.ui.Label",
+						"name": "default"
+					},
+					"text": "Click here you doofus!",
+					"textAlignment": 8,
+					"ellipsis": false,
+					"ellipsisString": "...",
+					"wrap": false,
+					"color": null,
+					"touchable": "enabled",
+					"visible": true
+				},
+				"row": 1,
+				"column": 0,
+				"padLeft": 0,
+				"padRight": 0,
+				"padTop": 0,
+				"padBottom": 0,
+				"spaceLeft": 0,
+				"spaceRight": 0,
+				"spaceTop": 20,
+				"spaceBottom": 0,
+				"expandX": false,
+				"expandY": false,
+				"fillX": false,
+				"fillY": false,
+				"growX": false,
+				"growY": false,
+				"alignment": 1,
+				"minWidth": -1,
+				"minHeight": -1,
+				"maxWidth": -1,
+				"maxHeight": -1,
+				"preferredWidth": -1,
+				"preferredHeight": -1,
+				"uniformX": false,
+				"uniformY": false,
+				"colSpan": 1
 			}
 		],
 		"name": null,
@@ -62,7 +106,7 @@
 		"visible": true
 	}
 ],
-"backgroundColor": null,
+"backgroundColor": "black",
 "skinPath": "skin.json",
 "packageString": "com.mygdx.game",
 "classString": "Core"

@@ -1,2 +1,4 @@
-spine/libgdx.json
-spine/ray3k.json
+spine/card.json
+spine/hailstrom.json
+spine/mailstrom.json
+spine/treasure.json

@@ -1,0 +1,44 @@
+{
+"skeleton": { "hash": "6NFTo0ksDMKV1CkWqQbysGLxYhw", "spine": "3.8.99", "width": 1024, "height": 576, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/white", "bone": "root", "attachment": "game/white" },
+	{ "name": "hailstrom-logo", "bone": "root", "attachment": "hailstrom-logo" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/white": {
+				"game/white": { "x": 512, "y": 288, "scaleX": 1024, "scaleY": 576, "width": 1, "height": 1 }
+			},
+			"hailstrom-logo": {
+				"hailstrom-logo": { "path": "game/hailstrom-logo", "x": 512, "y": 288, "width": 770, "height": 225 }
+			}
+		}
+	}
+],
+"events": {
+	"sfx/wind": { "audio": "sfx/wind.mp3" }
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"hailstrom-logo": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"events": [
+			{ "name": "sfx/wind" }
+		]
+	},
+	"stand": {}
+}
+}

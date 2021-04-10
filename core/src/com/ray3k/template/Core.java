@@ -8,11 +8,8 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
-import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.dongbat.jbump.CollisionFilter;
-import com.dongbat.jbump.Item;
 import com.dongbat.jbump.Response;
 import com.dongbat.jbump.World;
 import com.esotericsoftware.spine.AnimationStateData;
@@ -30,7 +27,6 @@ public class Core extends JamGame {
     public static Core core;
     public static Skin skin;
     public static SkeletonRenderer skeletonRenderer;
-    public static ChangeListener sndChangeListener;
     public static EntityController entityController;
     public static World<Entity> world;
     public static CollisionFilter defaultCollisionFilter;
@@ -62,13 +58,6 @@ public class Core extends JamGame {
         
         world = new World<>(100);
         defaultCollisionFilter = (item, other) -> Response.bounce;
-        
-        sndChangeListener = new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                sfx_click.play();
-            }
-        };
         
         setScreen(new LoadScreen(() -> {
             loadResources(assetManager);

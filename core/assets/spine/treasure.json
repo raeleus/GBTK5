@@ -1,0 +1,104 @@
+{
+"skeleton": {
+	"hash": "S/tAkErI00xGoKlYSG/5JjEWyAI",
+	"spine": "3.8.99",
+	"x": 244.84,
+	"y": 58.94,
+	"width": 553,
+	"height": 475.2,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "treasure", "parent": "root", "length": 204.2, "rotation": 2.15, "x": 577.37, "y": 298.75 },
+	{ "name": "beam-star", "parent": "root", "length": 203.95, "x": 542.81, "y": 324.33 }
+],
+"slots": [
+	{ "name": "treasure", "bone": "treasure", "attachment": "treasure" },
+	{ "name": "treasure-click-me", "bone": "treasure", "attachment": "treasure-click-me" },
+	{ "name": "beam-star", "bone": "beam-star", "attachment": "beam-star" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"beam-star": {
+				"beam-star": { "path": "game/beam-star", "x": 7.16, "y": 16.1, "width": 284, "height": 260 }
+			},
+			"treasure": {
+				"treasure": { "path": "game/treasure", "x": -50.42, "y": 61.33, "rotation": -2.15, "width": 488, "height": 352 }
+			},
+			"treasure-click-me": {
+				"treasure-click-me": { "path": "game/treasure-click-me", "x": -63.02, "y": -185.07, "rotation": -2.15, "width": 553, "height": 105 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"beam-star": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"treasure-click-me": {
+				"attachment": [
+					{ "time": 0.3, "name": null },
+					{ "time": 0.6, "name": "treasure-click-me" },
+					{ "time": 0.9, "name": null },
+					{ "time": 1.1667, "name": "treasure-click-me" }
+				]
+			}
+		},
+		"bones": {
+			"treasure": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "angle": -6.42 },
+					{ "time": 0.4, "angle": 2.47 },
+					{ "time": 0.6, "angle": -6.9 },
+					{ "time": 0.7667, "angle": 3.5 },
+					{ "time": 0.9667, "angle": -1.02 },
+					{ "time": 1.1667 }
+				],
+				"translate": [
+					{ "x": -0.96, "curve": "stepped" },
+					{ "time": 0.7667, "x": -0.96 },
+					{ "time": 0.9667, "x": -0.96, "y": 36.4 },
+					{ "time": 1.1667, "x": -0.96 }
+				]
+			}
+		}
+	},
+	"click": {
+		"slots": {
+			"beam-star": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"treasure": {
+				"attachment": [
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"treasure-click-me": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"beam-star": {
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.6667, "x": 11.812, "y": 11.812 }
+				]
+			}
+		}
+	}
+}
+}

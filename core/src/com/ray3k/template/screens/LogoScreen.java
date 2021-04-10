@@ -20,24 +20,25 @@ import com.esotericsoftware.spine.utils.SkeletonDrawable;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
-import static com.ray3k.template.Resources.Ray3kSpine.*;
+import static com.ray3k.template.Resources.HailstromSpine.*;
 
 public class LogoScreen extends JamScreen {
     private Stage stage;
     private Array<SpineDrawable> spineDrawables;
-    private final static Color BG_COLOR = new Color(Color.BLACK);
+    private final static Color BG_COLOR = new Color(Color.WHITE);
     private ObjectSet<Sound> sounds;
     
     @Override
     public void show() {
         super.show();
-        
+
         spineDrawables = new Array<>();
         sounds = new ObjectSet<>();
-    
+        
         Skeleton skeleton = new Skeleton(skeletonData);
         AnimationState animationState = new AnimationState(animationData);
         var spineDrawable = new SpineDrawable(skeletonRenderer, skeleton, animationState);
+        spineDrawable.setMinSize(1024, 576);
         spineDrawable.getAnimationState().setAnimation(0, standAnimation, false);
         spineDrawable.getAnimationState().apply(spineDrawable.getSkeleton());
         spineDrawables.add(spineDrawable);
@@ -48,25 +49,24 @@ public class LogoScreen extends JamScreen {
         Table root = new Table();
         root.setFillParent(true);
         stage.addActor(root);
-        
+    
         Image image = new Image(spineDrawable);
         image.setScaling(Scaling.fit);
         root.add(image).grow();
-    
         spineDrawable.getAnimationState().setAnimation(0, animationAnimation, false);
-        
+    
         spineDrawable.getAnimationState().addListener(new AnimationState.AnimationStateAdapter() {
             @Override
             public void complete(AnimationState.TrackEntry entry) {
                 if (entry.getAnimation() == animationAnimation) {
-                    core.transition(new MenuScreen());
+                    core.transition(new TitleScreen());
                 }
             }
-            
+    
             @Override
             public void event(AnimationState.TrackEntry entry, Event event) {
                 if (event.getData().getAudioPath() != null && !event.getData().getAudioPath().equals("")) {
-                    Sound sound = assetManager.get("sfx/" + event.getData().getAudioPath());
+                    Sound sound = assetManager.get(event.getData().getAudioPath());
                     sound.play();
                     sounds.add(sound);
                 }
@@ -76,13 +76,13 @@ public class LogoScreen extends JamScreen {
         stage.addListener(new InputListener() {
             @Override
             public boolean keyDown(InputEvent event, int keycode) {
-                core.transition(new MenuScreen());
+                core.transition(new TitleScreen());
                 return true;
             }
-            
+    
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-                core.transition(new MenuScreen());
+                core.transition(new TitleScreen());
                 return true;
             }
         });

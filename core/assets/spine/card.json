@@ -1,0 +1,1281 @@
+{
+"skeleton": {
+	"hash": "qGQpH0iqDdKmMH9iaZwxgE9REPQ",
+	"spine": "3.8.99",
+	"x": -8.6,
+	"y": -8.62,
+	"width": 180.43,
+	"height": 234.41,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "card",
+		"parent": "root",
+		"length": 216.59,
+		"x": 87.54,
+		"y": 99.95,
+		"scaleX": 0.5,
+		"scaleY": 0.5
+	}
+],
+"slots": [
+	{ "name": "card", "bone": "card", "dark": "000000", "attachment": "card" },
+	{ "name": "background", "bone": "card", "dark": "000000", "attachment": "background" },
+	{ "name": "description", "bone": "card", "dark": "000000", "attachment": "description" },
+	{ "name": "title", "bone": "card", "dark": "000000", "attachment": "title" },
+	{ "name": "label", "bone": "card", "dark": "000000", "attachment": "label" },
+	{ "name": "animal", "bone": "card", "dark": "000000", "attachment": "animal" },
+	{ "name": "orb-attack", "bone": "card", "dark": "000000", "attachment": "orb-attack" },
+	{ "name": "orb-health", "bone": "card", "dark": "000000", "attachment": "orb-health" },
+	{ "name": "orb-mana", "bone": "card", "dark": "000000", "attachment": "orb-mana" },
+	{ "name": "mana", "bone": "card", "dark": "000000", "attachment": "mana" },
+	{ "name": "attack", "bone": "card", "dark": "000000", "attachment": "attack" },
+	{ "name": "health", "bone": "card", "dark": "000000", "attachment": "health" },
+	{ "name": "explosion1", "bone": "card" },
+	{ "name": "explosion2", "bone": "card" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"attack": {
+				"num_1": { "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"card": {
+				"card-back": { "path": "game/card-back", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"explosion1": {
+				"explosion-1": { "path": "game/explosion-1", "x": -75, "y": -88, "width": 259, "height": 260 },
+				"explosion-2": { "path": "game/explosion-2", "x": -75, "y": -88, "width": 259, "height": 260 },
+				"explosion-3": { "path": "game/explosion-3", "x": -75, "y": -88, "width": 239, "height": 258 },
+				"explosion-4": { "path": "game/explosion-4", "x": -75, "y": -88, "width": 180, "height": 188 }
+			},
+			"explosion2": {
+				"explosion-1": { "path": "game/explosion-1", "x": 73, "y": 142, "width": 259, "height": 260 },
+				"explosion-2": { "path": "game/explosion-2", "x": 73, "y": 142, "width": 259, "height": 260 },
+				"explosion-3": { "path": "game/explosion-3", "x": 73, "y": 142, "width": 239, "height": 258 },
+				"explosion-4": { "path": "game/explosion-4", "x": 73, "y": 142, "width": 180, "height": 188 }
+			},
+			"health": {
+				"num_1": { "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"mana": {
+				"num_1": { "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"orb-attack": {
+				"orb-attack": { "path": "game/orb-attack", "x": -152.26, "y": -174.15, "width": 80, "height": 86 }
+			},
+			"orb-health": {
+				"orb-health": { "path": "game/orb-health", "x": 128.59, "y": -169.69, "width": 80, "height": 86 }
+			},
+			"orb-mana": {
+				"orb-mana": { "path": "game/orb-mana", "x": -144.83, "y": 216.67, "width": 80, "height": 70 }
+			}
+		}
+	},
+	{
+		"name": "ape",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "ape", "path": "game/ape", "x": 3.12, "y": 142.06, "width": 182, "height": 179 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-1", "path": "game/background-1", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "ape-description", "path": "game/ape-description", "x": -2.79, "y": -82.34, "width": 225, "height": 53 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_1", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "ape-title", "path": "game/ape-title", "x": -4.79, "y": 35.89, "width": 210, "height": 48 }
+			}
+		}
+	},
+	{
+		"name": "bat",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "bat", "path": "game/bat", "x": -7.72, "y": 135.74, "width": 264, "height": 179 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-2", "path": "game/background-2", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "bat-description", "path": "game/bat-description", "x": 2.63, "y": -81.44, "width": 237, "height": 126 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_1", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "bat-title", "path": "game/bat-title", "x": -0.59, "y": 41.78, "width": 145, "height": 40 }
+			}
+		}
+	},
+	{
+		"name": "bear",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "bear", "path": "game/bear", "x": 2.89, "y": 136.1, "width": 130, "height": 159 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-3", "path": "game/background-3", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "bear-description", "path": "game/bear-description", "x": 1.51, "y": -81.44, "width": 223, "height": 30 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_1", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "bear-title", "path": "game/bear-title", "x": 3.88, "y": 38.43, "width": 183, "height": 38 }
+			}
+		}
+	},
+	{
+		"name": "cow",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "cow", "path": "game/cow", "x": 19.74, "y": 132.04, "width": 213, "height": 166 }
+			},
+			"attack": {
+				"attack": { "name": "num_3", "path": "game/num_3", "x": -152.26, "y": -174.15, "width": 24, "height": 39 }
+			},
+			"background": {
+				"background": { "name": "background-4", "path": "game/background-4", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-gold", "path": "game/card-gold", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "cow-description", "path": "game/cow-description", "x": 1.51, "y": -81.44, "width": 212, "height": 51 }
+			},
+			"health": {
+				"health": { "name": "num_5", "path": "game/num_5", "x": 128.59, "y": -168.21, "width": 25, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_3", "path": "game/num_3", "x": -146.32, "y": 218.15, "width": 24, "height": 39 }
+			},
+			"title": {
+				"title": { "name": "cow-title", "path": "game/cow-title", "x": -3.77, "y": 38.43, "width": 233, "height": 44 }
+			}
+		}
+	},
+	{
+		"name": "eagle",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "eagle", "path": "game/eagle", "x": 0.23, "y": 117.38, "width": 250, "height": 141 }
+			},
+			"attack": {
+				"attack": { "name": "num_5", "path": "game/num_5", "x": -152.26, "y": -174.15, "width": 25, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-3", "path": "game/background-3", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-gold", "path": "game/card-gold", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "eagle-description", "path": "game/eagle-description", "x": 1.51, "y": -74.15, "width": 184, "height": 62 }
+			},
+			"health": {
+				"health": { "name": "num_3", "path": "game/num_3", "x": 128.59, "y": -168.21, "width": 24, "height": 39 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_3", "path": "game/num_3", "x": -146.32, "y": 218.15, "width": 24, "height": 39 }
+			},
+			"title": {
+				"title": { "name": "eagle-title", "path": "game/eagle-title", "x": -3.77, "y": 38.43, "width": 205, "height": 42 }
+			}
+		}
+	},
+	{
+		"name": "elephant",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "elephant", "path": "game/elephant", "x": 11.5, "y": 142.57, "width": 199, "height": 184 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-1", "path": "game/background-1", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "elephant-description", "path": "game/elephant-description", "x": 1.51, "y": -76.8, "width": 200, "height": 60 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_1", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "elephant-title", "path": "game/elephant-title", "x": -3.77, "y": 38.43, "width": 208, "height": 45 }
+			}
+		}
+	},
+	{
+		"name": "fish",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "fish", "path": "game/fish", "x": 2.22, "y": 133.95, "width": 254, "height": 169 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-2", "path": "game/background-2", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "fish-description", "path": "game/fish-description", "x": 1.51, "y": -76.8, "width": 174, "height": 64 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_1", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "fish-title", "path": "game/fish-title", "x": -1.11, "y": 39.09, "width": 151, "height": 45 }
+			}
+		}
+	},
+	{
+		"name": "horse",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "horse", "path": "game/horse", "x": 2.22, "y": 144.56, "width": 234, "height": 190 }
+			},
+			"attack": {
+				"attack": { "name": "num_5", "path": "game/num_5", "x": -152.26, "y": -174.15, "width": 25, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-3", "path": "game/background-3", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-gold", "path": "game/card-gold", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "horse-description", "path": "game/horse-description", "x": 1.51, "y": -76.8, "width": 162, "height": 53 }
+			},
+			"health": {
+				"health": { "name": "num_5", "path": "game/num_5", "x": 128.59, "y": -168.21, "width": 25, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_3", "path": "game/num_3", "x": -146.32, "y": 218.15, "width": 24, "height": 39 }
+			},
+			"title": {
+				"title": { "name": "horse-title", "path": "game/horse-title", "x": 1.54, "y": 39.09, "width": 180, "height": 44 }
+			}
+		}
+	},
+	{
+		"name": "octopus",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "octopus", "path": "game/octopus", "x": -3.75, "y": 131.96, "width": 257, "height": 200 }
+			},
+			"attack": {
+				"attack": { "name": "num_10", "path": "game/num_10", "x": -152.26, "y": -174.15, "width": 41, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-4", "path": "game/background-4", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-platinum", "path": "game/card-platinum", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "octopus-description", "path": "game/octopus-description", "x": 1.51, "y": -80.78, "width": 226, "height": 59 }
+			},
+			"health": {
+				"health": { "name": "num_5", "path": "game/num_5", "x": 128.59, "y": -168.21, "width": 25, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_7", "path": "game/num_7", "x": -146.32, "y": 218.15, "width": 30, "height": 39 }
+			},
+			"title": {
+				"title": { "name": "octopus-title", "path": "game/octopus-title", "x": 1.54, "y": 39.09, "width": 239, "height": 46 }
+			}
+		}
+	},
+	{
+		"name": "parrot",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "parrot", "path": "game/parrot", "x": -18.25, "y": 121.42, "width": 288, "height": 150 }
+			},
+			"attack": {
+				"attack": { "name": "num_8", "path": "game/num_8", "x": -152.26, "y": -174.15, "width": 28, "height": 40 }
+			},
+			"background": {
+				"background": { "name": "background-5", "path": "game/background-5", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-platinum", "path": "game/card-platinum", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "parrot-description", "path": "game/parrot-description", "x": 1.51, "y": -80.78, "width": 215, "height": 94 }
+			},
+			"health": {
+				"health": { "name": "num_8", "path": "game/num_8", "x": 128.59, "y": -168.21, "width": 28, "height": 40 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_7", "path": "game/num_7", "x": -146.32, "y": 218.15, "width": 30, "height": 39 }
+			},
+			"title": {
+				"title": { "name": "parrot-title", "path": "game/parrot-title", "x": 1.54, "y": 39.09, "width": 202, "height": 44 }
+			}
+		}
+	},
+	{
+		"name": "rabbit",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "rabbit", "path": "game/rabbit", "x": 1.52, "y": 140.08, "width": 137, "height": 169 }
+			},
+			"attack": {
+				"attack": { "name": "num_1", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-1", "path": "game/background-1", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "rabbit-description", "path": "game/rabbit-description", "x": -2.59, "y": -80.78, "width": 236, "height": 53 }
+			},
+			"health": {
+				"health": { "name": "num_1", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_1", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "rabbit-title", "path": "game/rabbit-title", "x": 1.54, "y": 42.17, "width": 174, "height": 42 }
+			}
+		}
+	},
+	{
+		"name": "shark",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "shark", "path": "game/shark", "x": 1.52, "y": 146.64, "width": 150, "height": 177 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-2", "path": "game/background-2", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "shark-description", "path": "game/shark-description", "x": 1, "y": -89.16, "width": 249, "height": 123 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_1", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "shark-title", "path": "game/shark-title", "x": 1.54, "y": 39.82, "width": 194, "height": 50 }
+			}
+		}
+	},
+	{
+		"name": "snake",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "snake", "path": "game/snake", "x": 1.52, "y": 148.5, "width": 168, "height": 176 }
+			},
+			"attack": {
+				"attack": { "name": "num_5", "path": "game/num_5", "x": -152.26, "y": -174.15, "width": 25, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-3", "path": "game/background-3", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-dark", "path": "game/card-dark", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "snake-description", "path": "game/snake-description", "x": 1, "y": -81.93, "width": 191, "height": 119 }
+			},
+			"health": {
+				"health": { "name": "num_10", "path": "game/num_10", "x": 128.59, "y": -168.21, "width": 41, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_10", "path": "game/num_10", "x": -146.32, "y": 218.15, "width": 41, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "snake-title", "path": "game/snake-title", "x": 1.54, "y": 39.82, "width": 170, "height": 41 }
+			}
+		}
+	},
+	{
+		"name": "spider",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "spider", "path": "game/spider", "x": -2.75, "y": 124.67, "width": 256, "height": 152 }
+			},
+			"attack": {
+				"attack": { "name": "num_6", "path": "game/num_6", "x": -152.26, "y": -174.15, "width": 26, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-4", "path": "game/background-4", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-gold", "path": "game/card-gold", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "spider-description", "path": "game/spider-description", "x": 1, "y": -81.93, "width": 224, "height": 69 }
+			},
+			"health": {
+				"health": { "name": "num_6", "path": "game/num_6", "x": 128.59, "y": -168.21, "width": 26, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_7", "path": "game/num_7", "x": -146.32, "y": 218.15, "width": 30, "height": 39 }
+			},
+			"title": {
+				"title": { "name": "spider-title", "path": "game/spider-title", "x": 1.54, "y": 39.82, "width": 162, "height": 43 }
+			}
+		}
+	},
+	{
+		"name": "tiger",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "tiger", "path": "game/tiger", "x": 35.13, "y": 133.83, "width": 179, "height": 169 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-5", "path": "game/background-5", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "tiger-description", "path": "game/tiger-description", "x": 1, "y": -81.93, "width": 193, "height": 60 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_2", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "tiger-title", "path": "game/tiger-title", "x": 1.54, "y": 39.82, "width": 168, "height": 46 }
+			}
+		}
+	},
+	{
+		"name": "toucan",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "toucan", "path": "game/toucan", "x": -29.03, "y": 136.28, "width": 217, "height": 165 }
+			},
+			"attack": {
+				"attack": { "name": "num_3", "path": "game/num_3", "x": -152.26, "y": -174.15, "width": 24, "height": 39 }
+			},
+			"background": {
+				"background": { "name": "background-1", "path": "game/background-1", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-gold", "path": "game/card-gold", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "toucan-description", "path": "game/toucan-description", "x": 1, "y": -81.93, "width": 188, "height": 94 }
+			},
+			"health": {
+				"health": { "name": "num_6", "path": "game/num_6", "x": 128.59, "y": -168.21, "width": 26, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_5", "path": "game/num_5", "x": -146.32, "y": 218.15, "width": 25, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "toucan-title", "path": "game/toucan-title", "x": 1.54, "y": 37.99, "width": 233, "height": 51 }
+			}
+		}
+	},
+	{
+		"name": "turtle",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "turtle", "path": "game/turtle", "x": 7.02, "y": 125.89, "width": 236, "height": 154 }
+			},
+			"attack": {
+				"attack": { "name": "num_1", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-2", "path": "game/background-2", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-dark", "path": "game/card-dark", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "turtle-description", "path": "game/turtle-description", "x": -0.14, "y": -81.93, "width": 239, "height": 93 }
+			},
+			"health": {
+				"health": { "name": "num_10", "path": "game/num_10", "x": 128.59, "y": -168.21, "width": 41, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_10", "path": "game/num_10", "x": -146.32, "y": 218.15, "width": 41, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "turtle-title", "path": "game/turtle-title", "x": 0.16, "y": 37.07, "width": 266, "height": 48 }
+			}
+		}
+	},
+	{
+		"name": "walrus",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "walrus", "path": "game/walrus", "x": -19.93, "y": 115.11, "width": 228, "height": 161 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-3", "path": "game/background-3", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "walrus-description", "path": "game/walrus-description", "x": -0.14, "y": -81.93, "width": 214, "height": 64 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_2", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "walrus-title", "path": "game/walrus-title", "x": 0.16, "y": 37.07, "width": 210, "height": 41 }
+			}
+		}
+	},
+	{
+		"name": "wolf",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "wolf", "path": "game/wolf", "x": 23.73, "y": 134.52, "width": 174, "height": 170 }
+			},
+			"attack": {
+				"attack": { "name": "num_2", "path": "game/num_1", "x": -152.26, "y": -174.15, "width": 18, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-4", "path": "game/background-4", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": { "name": "card-normal", "path": "game/card-normal", "x": -6.54, "y": 21.05, "width": 337, "height": 442 }
+			},
+			"description": {
+				"description": { "name": "wolf-description", "path": "game/wolf-description", "x": -0.14, "y": -81.93, "width": 232, "height": 58 }
+			},
+			"health": {
+				"health": { "name": "num_2", "path": "game/num_1", "x": 128.59, "y": -168.21, "width": 18, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-animal", "path": "game/label-animal", "x": 5.03, "y": -158.29, "width": 74, "height": 17 }
+			},
+			"mana": {
+				"mana": { "name": "num_2", "path": "game/num_1", "x": -146.32, "y": 218.15, "width": 18, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "wolf-title", "path": "game/wolf-title", "x": 0.16, "y": 37.07, "width": 193, "height": 46 }
+			}
+		}
+	},
+	{
+		"name": "zebra",
+		"attachments": {
+			"animal": {
+				"animal": { "name": "zebra", "path": "game/zebra", "x": 2.71, "y": 143.68, "width": 90, "height": 171 }
+			},
+			"attack": {
+				"attack": { "name": "num_11", "path": "game/num_10", "x": -152.26, "y": -174.15, "width": 41, "height": 38 }
+			},
+			"background": {
+				"background": { "name": "background-4", "path": "game/background-4", "x": -4.03, "y": 131.17, "width": 258, "height": 164 }
+			},
+			"card": {
+				"card": {
+					"name": "card-dark",
+					"path": "game/card-dark",
+					"x": -6.54,
+					"y": 21.05,
+					"scaleX": 1.0084,
+					"scaleY": 1.0084,
+					"width": 337,
+					"height": 442
+				}
+			},
+			"description": {
+				"description": { "name": "zebra-description", "path": "game/zebra-description", "x": -0.14, "y": -87.85, "width": 238, "height": 120 }
+			},
+			"health": {
+				"health": { "name": "num_11", "path": "game/num_10", "x": 128.59, "y": -168.21, "width": 41, "height": 38 }
+			},
+			"label": {
+				"label": { "name": "label-god", "path": "game/label-god", "x": 5.03, "y": -158.29, "width": 44, "height": 19 }
+			},
+			"mana": {
+				"mana": { "name": "num_11", "path": "game/num_10", "x": -146.32, "y": 218.15, "width": 41, "height": 38 }
+			},
+			"title": {
+				"title": { "name": "zebra-title", "path": "game/zebra-title", "x": 0.16, "y": 35.45, "width": 245, "height": 53 }
+			}
+		}
+	}
+],
+"animations": {
+	"attack": {
+		"bones": {
+			"card": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "y": 65, "curve": "stepped" },
+					{ "time": 1, "y": 65 },
+					{ "time": 1.1667 }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"animal": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"background": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"card": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"description": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"label": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"orb-attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"orb-health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"orb-mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			},
+			"title": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ffffff00", "dark": "000000" }
+				]
+			}
+		},
+		"bones": {
+			"card": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": 45 },
+					{ "time": 0.6667, "angle": 90 }
+				],
+				"translate": [
+					{ "curve": 0.111, "c2": 0.87, "c3": 0.75 },
+					{ "time": 0.3333, "y": 144.25, "curve": 0.378, "c2": 0.02, "c4": 0.62 },
+					{ "time": 0.6667, "y": -396.26 }
+				]
+			}
+		}
+	},
+	"enemy attack": {
+		"bones": {
+			"card": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "y": -66, "curve": "stepped" },
+					{ "time": 1, "y": -66 },
+					{ "time": 1.1667 }
+				]
+			}
+		}
+	},
+	"hide": {
+		"slots": {
+			"animal": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"attack": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"background": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"card": {
+				"attachment": [
+					{ "time": 0.2667, "name": "card-back" }
+				]
+			},
+			"description": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"health": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"label": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"mana": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"orb-attack": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"orb-health": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"orb-mana": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"title": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"card": {
+				"scale": [
+					{},
+					{ "time": 0.2667, "x": 0 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"hover": {
+		"slots": {
+			"animal": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"background": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"card": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"description": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"label": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"orb-attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"orb-health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"orb-mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			},
+			"title": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "006569" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"animal": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"background": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"card": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"description": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"explosion1": {
+				"attachment": [
+					{ "time": 0.0667, "name": "explosion-1" },
+					{ "time": 0.1333, "name": "explosion-2" },
+					{ "time": 0.2, "name": "explosion-3" },
+					{ "time": 0.2667, "name": "explosion-4" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"explosion2": {
+				"attachment": [
+					{ "time": 0.4, "name": "explosion-1" },
+					{ "time": 0.4667, "name": "explosion-2" },
+					{ "time": 0.5333, "name": "explosion-3" },
+					{ "time": 0.6, "name": "explosion-4" },
+					{ "time": 0.6667, "name": null }
+				]
+			},
+			"health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"label": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"orb-attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"orb-health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"orb-mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"title": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"show": {
+		"slots": {
+			"animal": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "animal" }
+				]
+			},
+			"attack": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "attack" }
+				]
+			},
+			"background": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "background" }
+				]
+			},
+			"card": {
+				"attachment": [
+					{ "name": "card-back" },
+					{ "time": 0.2667, "name": "card" }
+				]
+			},
+			"description": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "description" }
+				]
+			},
+			"health": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "health" }
+				]
+			},
+			"label": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "label" }
+				]
+			},
+			"mana": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "mana" }
+				]
+			},
+			"orb-attack": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "orb-attack" }
+				]
+			},
+			"orb-health": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "orb-health" }
+				]
+			},
+			"orb-mana": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "orb-mana" }
+				]
+			},
+			"title": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "title" }
+				]
+			}
+		},
+		"bones": {
+			"card": {
+				"scale": [
+					{},
+					{ "time": 0.2667, "x": 0 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"unhover": {
+		"slots": {
+			"animal": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"background": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"card": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"description": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"label": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"orb-attack": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"orb-health": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"orb-mana": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"title": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "006569" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"unzoom": {
+		"bones": {
+			"card": {
+				"scale": [
+					{ "x": 2, "y": 2 },
+					{ "time": 0.1667 }
+				]
+			}
+		}
+	},
+	"zoom": {
+		"bones": {
+			"card": {
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 2, "y": 2 }
+				]
+			}
+		}
+	}
+}
+}
