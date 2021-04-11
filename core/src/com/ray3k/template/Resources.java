@@ -14,6 +14,16 @@ public class Resources {
 
     public static TextureAtlas textures_textures;
 
+    public static Sound sfx_chaching;
+
+    public static Sound sfx_click;
+
+    public static Sound sfx_explosion;
+
+    public static Sound sfx_shake;
+
+    public static Sound sfx_win;
+
     public static Sound sfx_wind;
 
     public static Music bgm_game;
@@ -32,6 +42,8 @@ public class Resources {
         CardSpine.attackAnimation = CardSpine.skeletonData.findAnimation("attack");
         CardSpine.dieAnimation = CardSpine.skeletonData.findAnimation("die");
         CardSpine.enemyAttackAnimation = CardSpine.skeletonData.findAnimation("enemy attack");
+        CardSpine.fadeInAnimation = CardSpine.skeletonData.findAnimation("fade in");
+        CardSpine.fadeOutAnimation = CardSpine.skeletonData.findAnimation("fade out");
         CardSpine.hideAnimation = CardSpine.skeletonData.findAnimation("hide");
         CardSpine.hoverAnimation = CardSpine.skeletonData.findAnimation("hover");
         CardSpine.hurtAnimation = CardSpine.skeletonData.findAnimation("hurt");
@@ -71,12 +83,21 @@ public class Resources {
         MailstromSpine.hideAnimation = MailstromSpine.skeletonData.findAnimation("hide");
         MailstromSpine.standAnimation = MailstromSpine.skeletonData.findAnimation("stand");
         MailstromSpine.defaultSkin = MailstromSpine.skeletonData.findSkin("default");
+        MoneySpine.skeletonData = assetManager.get("spine/money.json");
+        MoneySpine.animationData = assetManager.get("spine/money.json-animation");
+        MoneySpine.animationAnimation = MoneySpine.skeletonData.findAnimation("animation");
+        MoneySpine.defaultSkin = MoneySpine.skeletonData.findSkin("default");
         TreasureSpine.skeletonData = assetManager.get("spine/treasure.json");
         TreasureSpine.animationData = assetManager.get("spine/treasure.json-animation");
         TreasureSpine.animationAnimation = TreasureSpine.skeletonData.findAnimation("animation");
         TreasureSpine.clickAnimation = TreasureSpine.skeletonData.findAnimation("click");
         TreasureSpine.defaultSkin = TreasureSpine.skeletonData.findSkin("default");
         textures_textures = assetManager.get("textures/textures.atlas");
+        sfx_chaching = assetManager.get("sfx/chaching.mp3");
+        sfx_click = assetManager.get("sfx/click.mp3");
+        sfx_explosion = assetManager.get("sfx/explosion.mp3");
+        sfx_shake = assetManager.get("sfx/shake.mp3");
+        sfx_win = assetManager.get("sfx/win.mp3");
         sfx_wind = assetManager.get("sfx/wind.mp3");
         bgm_game = assetManager.get("bgm/game.mp3");
         bgm_title = assetManager.get("bgm/title.mp3");
@@ -104,6 +125,10 @@ public class Resources {
         public static Animation dieAnimation;
 
         public static Animation enemyAttackAnimation;
+
+        public static Animation fadeInAnimation;
+
+        public static Animation fadeOutAnimation;
 
         public static Animation hideAnimation;
 
@@ -184,6 +209,16 @@ public class Resources {
         public static Animation hideAnimation;
 
         public static Animation standAnimation;
+
+        public static com.esotericsoftware.spine.Skin defaultSkin;
+    }
+
+    public static class MoneySpine {
+        public static SkeletonData skeletonData;
+
+        public static AnimationStateData animationData;
+
+        public static Animation animationAnimation;
 
         public static com.esotericsoftware.spine.Skin defaultSkin;
     }

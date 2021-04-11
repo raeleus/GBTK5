@@ -2,4 +2,5 @@ spine/battleground.json
 spine/card.json
 spine/hailstrom.json
 spine/mailstrom.json
+spine/money.json
 spine/treasure.json

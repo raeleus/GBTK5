@@ -1,1 +1,6 @@
+sfx/chaching.mp3
+sfx/click.mp3
+sfx/explosion.mp3
+sfx/shake.mp3
+sfx/win.mp3
 sfx/wind.mp3
